@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Energy</title>
+    <link rel="stylesheet" href="Eco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&family=Style+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+            <ul class="sidebar">
+            <li onclick=hideSidebar()><button href="#"><svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" height="24" viewBox="0 0 24 24" 
+     fill="none" stroke="currentColor" stroke-width="2" 
+     stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
+</button></li>
+            <li ><a  href="">Home</a></li>
+            <li ><a href="">About Us</a></li>
+            <li ><a href="">Services</a></li>
+            <li ><a href="">Projects</a></li>
+            <li ><a href="">Contact Us</a></li>
+        </ul>
+        <ul class="nav-links">
+            <li ><a id="img" href=""><img src="image.png"></a></li>
+            <li class="hideOnMobile" ><a id="mm" href="">Home</a></li>
+            <li class="hideOnMobile"><a href="">About Us</a></li>
+            <li class="hideOnMobile"><a href="">Services</a></li>
+            <li class="hideOnMobile"><a href="">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+            <li class="menu-button" onclick=showSidebar()><button><svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" height="24" viewBox="0 0 24 24" 
+     fill="none" stroke="currentColor" stroke-width="2" 
+     stroke-linecap="round" stroke-linejoin="round">
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+</svg>
+</button></li>
+        </ul>
+
+    </nav>
+    <div class="img-container">
+        <img alt="windmill" src="StockWindmill-1220x715_1944506545.jpg">
+        <div class="overlay">
+            <h1 class="img-tex">Green Energy Form <br><br> Natural resources</h1>
+        </div>
+    </div>
+    <div class="welcome">
+        <h1 class="wel">welcome !</h1>
+        <br>
+        <div class="Lorem"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nulla architecto non temporibus voluptate impedit commodi suscipit cum explicabo qui aperiam corporis dicta quos incidunt. Eius praesentium nam odio exercitationem!</p></div>
+        
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="1.00.jpg" alt="img" width="100%">
+        </div>
+        <div class="column">
+            <img src="2.00.jpg" alt="img" width="100%">
+        </div>
+        <div class="column">
+            <img src="3.00.jpg" alt="img" width="100%">
+        </div>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
